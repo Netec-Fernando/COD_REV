@@ -1,4 +1,4 @@
-# Capitulo 7: Configuracion herramienta revision de codigo
+# Práctica 7. Configuración de la herramienta revisión de código
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
@@ -7,7 +7,6 @@ Al finalizar la práctica, serás capaz de:
 - Practicar el proceso completo de revisión de código, incluyendo la creación de pull requests, revisión, solicitud de cambios y aprobación final.
 
 ## Objetivo Visual 
-Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
 
 ![diagrama1](../images/cap7/18.png)
 
@@ -15,7 +14,7 @@ Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es 
 - 20 minutos.
 
 ## Tabla de ayuda:
-Agregar una tabla con la información que pueda requerir el participante durante el laboratorio, como versión de software, IPs de servers, usuarios y credenciales de acceso.
+
 | Requisito | Descripcion|
 | --- | --- |
 | GitHub Account | Cuenta activa para acceder al repositorio y revisar pull requests. |
@@ -27,32 +26,30 @@ Agregar una tabla con la información que pueda requerir el participante durante
 | PHP8 y MySQL | Lenguaje y base de datos utilizados en el proyecto Laravel. Incluidos en laragon |
 | Correo Electrónico | Acceso al correo electrónico asociado a la cuenta de GitHub para aceptar la invitación como colaborador y recibir notificaciones sobre las revisiones. |
 | Permisos de Propietario | Permisos necesarios en GitHub para configurar la protección de ramas y gestionar pull requests en el repositorio. |
-| Documento de Evaluación | Herramienta para documentar las observaciones (puede ser un archivo de texto o similar). Formato en seccion documentos correspondiente a este capitulo |
+| Documento de Evaluación | Herramienta para documentar las observaciones (puede ser un archivo de texto o similar). Formato en seccion documentos correspondiente a este capítulo. |
 
 ## Instrucciones 
-<!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
-### Tarea 1. Descripción de la tarea a realizar.
 
 > [!IMPORTANT]
-> En esta actividad el compañero invitado al repositorio sera el autor del codigo y quien invito sera quien hara la revision o el revisor.
+> En esta actividad, el compañero invitado al repositorio será el autor del código y, quien invitó, será quien realizará la revisión o el revisor.
 
-paso 1. Invitaremos como colaborador a uno de nuestros compañeros al repositorio que creamos en la actividad del anterior capitulo
+paso 1. Invita como colaborador a uno de nuestros compañeros al repositorio que creaste en la actividad del anterior capítulo.
 
 ![Logo](../images/cap7/1.png)
 
-Ingresamos al apartodo "settings" de nuestro repositorio y damos click a "Collaborators"
+Ingresa al apartado **"Settings"** de tu repositorio y damos clic a **"Collaborators"**.
 
 ![Logo](../images/cap7/2.png)
 
-Damos click a "Add peoplo"
+Da clic a **"Add people"**.
 
 ![Logo](../images/cap7/3.png)
 
-Buscamos el nombre de usuario github de nuestro compañero, lo seleccionamos y agregamos dando click "Add 'user' to this repository"
+Busca el nombre de usuario GitHub de tu compañero, selecciónalo y agrégalo dando clic en **"Add 'user' to this repository"**.
 
-A nuestro compañero le llegara una email al correo de su cuenta de github el cual debera aceptar para poder ingresar al repo
+A tu compañero recibirá una email al correo de su cuenta de GitHub, el cual deberá aceptar para poder ingresar al repositorio.
 
-paso 2. Nuestro compañero clonara el repositorio en su maquina y lo agregara en github desktop
+Paso 2. Tu compañero deberá clonar el repositorio en su máquina y lo agregará en GitHub Desktop.
 
         git clone <url repositorio>
 
@@ -62,56 +59,55 @@ paso 2. Nuestro compañero clonara el repositorio en su maquina y lo agregara en
 
 ![Logo](../images/cap5/3.png)
 
-paso 3. Ya que nuestro compañero tiene acceso como colaborador, podra hacer cambios, primero crear una rama y publicarla
+Paso 3. Una vez que tu compañero tenga acceso como **Colaborador**, podrá hacer cambios. Primero, crear una rama y publicarla.
 
 ![Logo](../images/cap2/16.png)
 
 ![Logo](../images/cap2/17.png)
 
-Nombre a la rama
+Proporciónale un nombre a la rama.
 
 ![Logo](../images/cap2/15.png)
 
-Publicar la rama
+Después, publica la rama.
 
-paso 4.  Una vez creada la rama en el editor de codigo buscar el archivo "resource/views/user/index.blade.php", para realizar una pequeña modificacion, y hacer commit y push para que este en el remoto.
+Paso 4.  Una vez creada la rama en el editor de código, busca el archivo **"resource/views/user/index.blade.php"** para realizar una pequeña modificación, y haz commit y push para que esté en el remoto.
 
-paso 5.  Despues haremos pull request a la rama principal del repo que nos dieron acceso.
+Paso 5.  Después, realiza el pull request a la rama principal del repositorio al que te dieron acceso.
 
-paso 6. El dueño del repositorio podra visualizar el pull request y aprobarlo, dando por finalizada esta primera parte.
+Paso 6. El dueño del repositorio podrá visualizar el pull request y aprobarlo, dando por finalizada esta primera parte.
 
-paso 7. Como segunda parte, el dueño de cada repositorio creara una regla para la rama principal, esto con el fin de limitar las pull request a la rama principal
-
+Paso 7. Como segunda parte, el dueño de cada repositorio debe crear una regla para la rama principal, esto con el fin de limitar las pull request a la rama principal.
 
 ![Logo](../images/cap7/4.png)
 
-En la seccion de "setting" del repositorio, daremos click a "Branchs"
+En la seccion de **"Setting"** del repositorio, da clic a **"Branchs"**
 
 ![Logo](../images/cap7/5.png)
 
-Luego al boton "Add classic branch protection rule", aqui podremos las opciones de configuracion para las ramas
+Después, da clic al botón **"Add classic branch protection rule"**, en esta sección seecciona las opciones de configuración para las ramas.
 
 ![Logo](../images/cap7/6.png)
 
-* Luego en la nueva vista, escribimos la rama que queremos proteger, en este caso "master"
-* Seleccionamos "Require pull request before mergin", esto hara que sea necesario si o si una pull request para hacer merge con la rama principal
-* "Require approvals" en este caso seleccionamos 1, tener en cuenta que aplica solo si no hay cambios pendientes en la revision
+* Posteriormente, en la nueva vista, escribe la rama que quieres proteger, en este caso: **"master"**.
+* Selecciona **"Require pull request before mergin"**, esto hará que sea necesario sí o sí una pull request para hacer merge con la rama principal.
+* "Require approvals": en este caso selecciona: **1**. Ten en cuenta que aplica unicamente si no hay cambios pendientes en la revisión.
 
 ![Logo](../images/cap7/7.png)
 
-* "Require conversation resolition before merging", con esta opcion es obligatorio que todas la solicitudes hechas por el revisor en lineas de codigo sean resueltas
+* **"Require conversation resolition before merging"**: con esta opción es obligatorio que todas la solicitudes hechas por el revisor en líneas de código sean resueltas.
 
-Finalmente se da click a "Create"
+Finalmente, da clic a **"Create"**.
 
 ![Logo](../images/cap7/8.png)
 
-Esto nos llevara nuevamente a la configuracion de las ramas, donde vemos que se a aplicado una regla.
+Esto te llevará nuevamente a la configuracion de las ramas, donde puedes observar que se ha aplicado una regla.
 
-paso 8. Ahora que ya aplicamos una regla para nuestra rama, nuestro compañero que tiene acceso a nuestro repositorio, creara una rama en la que hara cambios simulando un error y hara pull request de este cambio.
+paso 8. Ahora que aplicaste la regla para tu rama, tu compañero que tiene acceso al repositorio, debe crear una rama en la que hará cambios simulando un error y hará pull request de este cambio.
 
 ![Logo](../images/cap7/9.png)
 
-Ahora notaremos nostros como autor del cambio que no podemos aprobar el pull request y en la seccion de reviewers esta seleccionado por defecto el dueño del repositorio, por lo que es necesario de la aprobacion de el
+Ahora notarás como autor del cambio que no puedes aprobar el pull request y, en la sección de Reviewers, está seleccionado por defecto el dueño del repositorio, por lo que es necesario de la aprobacion de él.
 
 ![Logo](../images/cap7/10.png)
 
