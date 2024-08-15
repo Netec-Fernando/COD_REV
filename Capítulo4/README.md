@@ -5,7 +5,7 @@ Al finalizar la práctica, serás capaz de:
 - Identificar vulnerabilidades.
 - Evaluar el cumplimiento de estándares de seguridad.
 
-## Objetivo Visual 
+## Objetivo Visual: 
 
 ![diagrama1](../images/cap4/7.png)
 
@@ -21,7 +21,7 @@ Al finalizar la práctica, serás capaz de:
 | Repositorio Clonado Localmente | Clonar el repositorio localmente para una revisión más detallada si es necesario. |
 | Documento de Evaluación | Herramienta para documentar las observaciones (puede ser un archivo de texto o similar). Formato en sección documentos correspondiente a este capítulo. |
 
-## Instrucciones 
+## Instrucciones:
 
 ### Tarea 1. Descripción de la tarea a realizar.
 Paso 1. Accede al repositorio para la actividad del capítulo.
@@ -40,14 +40,14 @@ Paso 2. Ingresa a la sección de **"Pull request"**.
 
 Selecciona el pull request activo.
 
-Paso 3. En la seccion de **"Files changed"**, revisa los archivos modificados para ver si cumplen con los estándares establecidos.
+Paso 3. En la sección de **"Files changed"**, revisa los archivos modificados para ver si cumplen con los estándares establecidos.
 
 ![Logo](../images/cap4/5.png)
 
 Paso 4.  Identifica los errores encontrados, ya sea que no cumplen con los estándares establecidos y de seguridad de datos.
 
-### Resultado esperado
+### Resultado esperado:
 
-En un documento establece si aprobarías el pull request, de no ser así, comentar los motivos, señala en dónde no se cumplieron los estándares y cómo esto podría afectar la seguridad de la informacion y la calidad del código.
+En un documento establece si aprobarías el pull request, de no ser así, comentar los motivos, señalando en dónde no se cumplieron los estándares y cómo esto podría afectar la seguridad de la información y la calidad del código.
 
 ![imagen resultado](../images/cap4/6.png)
