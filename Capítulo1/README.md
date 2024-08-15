@@ -24,7 +24,7 @@ Al finalizar la práctica, serás capaz de:
 ## Instrucciones 
 
 ### Tarea 1. 
-Paso 1. Ten configurado la informacion de usuario.
+Paso 1. Tener configurada la informacion de usuario.
 
         git config --global user.name "nombre"
 
@@ -42,7 +42,7 @@ Paso 1. Ten configurado la informacion de usuario.
 > [!TIP]
 > Debes tener en cuenta que el email sea el mismo en caso de manejar cuenta de GitHub.
 
-Paso 2. En una carpeta crea un archivo HTML; en Éste se podrÍa Únicamente establecer una estructura HTML básica.
+Paso 2. En una carpeta crea un archivo HTML; en este se podrá establecer únicamente una estructura HTML básica.
 
 ```html
     <!DOCTYPE html>
@@ -66,7 +66,7 @@ Paso 3. Por medio de la terminal, inicializa el repositorio.
 
 ![Logo](../images/cap1/7.png)
 
-Paso 4. Con el siguiente comando puedes visualizar que Git ya está haciendo seguimiento a nuestro archivos.
+Paso 4. Con el siguiente comando puedes visualizar que Git ya está haciendo seguimiento a nuestros archivos.
 
         git status
 
@@ -97,7 +97,7 @@ Paso 8. Después, procede a crear una rama y verifica que se haya realizado corr
 
 ![Logo](../images/cap1/13.png)
 
-Paso 9. Cambia a la rama creada y modifica el HTML con una lista o otro contenido.
+Paso 9. Cambia a la rama creada y modifica el HTML con una lista u otro contenido.
 
         git checkout feature/list
         git branch
