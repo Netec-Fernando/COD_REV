@@ -4,7 +4,7 @@
 Al finalizar la práctica, serás capaz de:
 - Desarrollar habilidades de programación en pares.
 
-## Objetivo Visual 
+## Objetivo Visual: 
 
 ![diagrama1](../images/cap6/24.png)
 
@@ -25,7 +25,7 @@ Imagen de Codio, 25 de agosto 2021 [Codio](https://www.codio.com/blog/3-collabor
 | Terminal/Comando CLI | Necesario para ejecutar comandos de Git y Laravel. |
 | PHP8 y MySQL | Lenguaje y base de datos utilizados en el proyecto Laravel. Incluidos en Laragon. |
 
-## Instrucciones 
+## Instrucciones: 
 
 Paso 1. Para iniciar, desde Laragon inicia los servicios de MySQL para base de datos y Apache.
 
@@ -126,7 +126,7 @@ Al ser la primera vez con este proyecto te preguntará si se debe crear una base
 
 ![Logo](../images/cap6/14.png)
 
-Preguntará si quieres crear la base de datos; escribe `yes` y da **Enter**.
+Preguntará si quieres crear la base de datos, escribe `yes` y da **Enter**.
 
 Paso 9. Realiza commit de los cambios y push para que suban al repositorio remoto.
 
@@ -139,14 +139,14 @@ Paso 10. Crea una rama donde crearás un listado de los usuarios.
 Después de crearla, publícala.
 
 
-Paso 11. Usa el comando `php artisan make:controller UserController`, esto creará un archivo controllador en la ruta **"app/Http/Controllers"**
+Paso 11. Usa el comando `php artisan make:controller UserController`, esto creará un archivo controller en la ruta **"app/Http/Controllers"**
 donde podrás crear los métodos correspondientes.
 
         php artisan make:controller UserController
 
 ![Logo](../images/cap6/17.png)
 
-Paso 12. En el archivo controllador que creaste, escribe el método index, donde primero deberás traer todos los registros de la tabla usuario, luego retonamos la vista la cual estaria en la ruta **"views/user/"** junto con todo los registro de usuarios.
+Paso 12. En el archivo controller que creaste, escribe el método index, donde primero deberás traer todos los registros de la tabla usuario, luego retonamos la vista la cual estaria en la ruta **"views/user/"** junto con todo los registro de usuarios.
 
 ```php
     <?php
@@ -179,7 +179,7 @@ Paso 13. Ingresa al archivo *"web.php"*, el cual es el archivo de rutas o urls d
 
 ![Logo](../images/cap6/20.png)
 
-La ruta que se encuentra ahí, debes modificarla para que no reciba una función si no un array con dos items: primero el controlador de usuario y el método que llamará esa ruta; en este caso, el método index.
+La ruta que se encuentra ahí, debes modificarla para que no reciba una función sino un array con dos items: primero el controlador de usuario y el método que llamará esa ruta, en este caso, el método index.
 
 Paso 14. Luego en la ruta de carpetas **"resource/views/"**, crea una carpeta **"user"** y, dentro de ésta, un archivo llamado **"index.blade.php"**.
 
@@ -187,7 +187,7 @@ Paso 14. Luego en la ruta de carpetas **"resource/views/"**, crea una carpeta **
 
 De esta foma, observa que concuerda con la ruta que se estableció en el controlador **"user.index"**.
 
-Paso 15. En el archivo index, crea la siguiente estructura HTML5 donde, por medio de un foreach, recorre la coleccion de registros que enviaste del controlador.
+Paso 15. En el archivo index, crea la siguiente estructura HTML5 donde, por medio de un foreach, recorre la colección de registros que enviaste del controlador.
 
 ## views/user/index.blade.php
 ```html
@@ -239,7 +239,7 @@ Paso 15. En el archivo index, crea la siguiente estructura HTML5 donde, por medi
 Paso 16. Finalmente, desde el navegador recarga la página y observa que carga el listado de usuarios registrados.
 
 
-### Resultado final
+### Resultado final:
 
 ![Logo](../images/cap6/23.png)
 
